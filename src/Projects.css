@@ -1,0 +1,9 @@
+.Probox
+{
+    border: 2px solid red;
+    position: absolute;
+    width: 1300px;
+    height: 650px;
+    margin-top: 50px;
+    margin-left: 200px;
+}

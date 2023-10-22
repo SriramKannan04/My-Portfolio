@@ -1,0 +1,78 @@
+nav
+{
+    width: 100px;
+    height: 97%;
+    background-color: rgb(35, 33, 33);
+    position: absolute;
+    overflow: hidden;
+    transition: width 0.4s linear;
+    box-shadow: 5px 5px 30px rgb(249, 248, 248);
+    border-radius: 10px;
+    border-color:  red;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+nav:hover
+{
+    width: 170px;
+}
+
+.first
+{
+    margin-left: 20px;
+    padding: 20px 0px;
+    
+}
+.last
+{
+    bottom: 5px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.size1
+{
+    width: 40px;
+    margin-left: 10px;
+}
+nav:hover .size1
+{
+    margin-left: 30px;
+}
+.size1:hover
+{
+    transform: rotate(-45deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.display, .display1, .display2, .display3
+{
+    display: none;
+    align-items: center;
+    color: rgb(245, 244, 244);
+    /* text-shadow: 2px 1px rgb(197, 7, 7); */
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: 'Fugaz One', cursive;
+}
+nav:hover .display
+{
+    display: block;
+    margin-left: 10px;
+}
+nav:hover .display1
+{
+    display: block;            
+    margin-left: 15px;
+}
+nav:hover .display2
+{
+    margin-left: 18px;
+    display: block; 
+}
+nav:hover .display3
+{
+    margin-left: 1px;
+    display: block; 
+}
+

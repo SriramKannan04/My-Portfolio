@@ -1,0 +1,96 @@
+.certiBox
+{
+    position: absolute;
+    width: 1300px;
+    height: 650px;
+    margin-top: 90px;
+    margin-left: 200px;
+    padding: 0px 30px;
+   
+}
+
+.certiOne
+{
+    display: flex;
+    padding: 0px 30px;
+}
+.certiTwo
+{
+    display: flex;
+    padding: 0px 25px;
+    margin-top: 10px;
+}
+
+.wow
+{
+    width: 400px;
+    height: 250px;
+}
+
+.seeMy
+{
+    width: 350px;
+    height: 250px;
+   /*  box-shadow: 5px 5px 5px red; */
+}
+.showCerti
+{
+    display: block;
+    transition: filter 0.3s ease;
+   
+}
+.certiDetails
+{
+    display: none;
+    font-family: 'Alkatra', cursive;
+    word-spacing: 3px;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 70px;
+    opacity: 1;
+    
+}
+.wow:hover .certiDetails
+{
+    display: block;
+}
+.wow:hover .showCerti
+{
+    display: none;
+} 
+
+.hereBtn
+{
+    font-family: 'Fugaz One', cursive;
+    padding-left: 55px;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+
+}
+.hereBtn2
+{
+    width: 100px;
+    letter-spacing: 2px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    color: darkblue;
+    border-radius: 10px;
+}
+.hereBtn2:hover
+{
+    background-color: darkblue;
+    color: aliceblue;
+    box-shadow: 5px 5px 15px darkblue;
+    border: 2px solid darkblue;
+    transition: 0.9s ;
+}
+.myCourse
+{
+    font-family: 'Alkatra', cursive;
+    font-weight: bold;
+}
+
+.moving
+{
+    padding-left: 30px;
+}
+

@@ -1,0 +1,334 @@
+.Conbox
+{
+    position: absolute;
+    width: 1300px;
+    height: 650px;
+    margin-top: 50px;
+    margin-left: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.details
+{
+    
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 550px;
+    height: 450px;
+}
+
+
+
+.message
+{
+    width: 600px;
+    height: 600px;
+    margin-top: 25px;
+    
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px #940B92;
+    background-color: white;
+    /*box-shadow: 5px 4px 5px rgb(238, 3, 3);*/
+    /*box-shadow: 10px 10px 15px #940B92;*/
+}
+.message:hover
+{
+    /*box-shadow: 8px 8px 10px orange;*/
+    /*box-shadow: 20px 20px 15px #E95793;*/
+    box-shadow: 20px 20px 15px #E95793;
+    transition: 0.5s;
+}
+
+
+.cardName 
+{
+    margin-top: 25px;
+    position: relative;
+    font-family: 'Alkatra', cursive;
+    color: #DA0C81;
+    text-shadow: 1px 1px #610C9F;
+    letter-spacing: 1px;
+}
+.cardName::before 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: #610C9F;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.9s ease-in-out;
+}
+.cardName:hover::before 
+{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+
+
+.input-container 
+{
+    position: relative;
+    margin: 1rem 0;
+    margin-left: 150px;
+    margin-top: 10px;
+    
+}
+.input 
+{
+    width: 100%;
+    outline: none;
+    border: 2px solid #35155D;
+    box-shadow: 8px 8px 10px #512B81;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #DA0C81;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.input:hover
+{
+    box-shadow: 8px 8px 10px #35155D;
+}
+textarea.input 
+{
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+.input-container label 
+{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: #DA0C81;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.input-container.textarea label 
+{
+    top: 1rem;
+    transform: translateY(0);
+}
+.input-container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+  }
+  
+  .input-container span:before,
+  .input-container span:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #fbfefd;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .input-container span:before {
+    left: 50%;
+  }
+  
+  .input-container span:after {
+    right: 50%;
+  }
+  
+  .input-container.focus label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+  }
+  
+  .input-container.focus span:before,
+  .input-container.focus span:after {
+    width: 50%;
+    opacity: 1;
+  }
+
+.Nickname
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+
+.submit:hover
+{
+    color: #4f3e74;
+    transition: 0.5s ;
+    border-radius: 10%;
+    height: 35px;
+    width: 15%;
+    transition: 0.5s ease;
+}
+.submit
+{
+    font-family: 'Fugaz One', cursive; 
+    border-radius: 15%;
+
+    width: 10%;
+    position: absolute;
+    top: 81%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    color: #512B81;
+    letter-spacing: 1px;
+
+    border: none;
+    background-color: white;
+    overflow: hidden;
+}
+.submit::before
+{
+    position: absolute;
+    content:'';
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.05);
+
+    transition: 1s;
+    z-index: -1;
+}
+
+.submit span:nth-child(1)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #E80F88, #940B92);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 
+{
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(100%);}
+}
+
+.submit span:nth-child(2)
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #E80F88, #940B92);
+  animation: animate2 1s linear infinite;
+}
+@keyframes animate2
+{
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(100%);}
+}
+
+.submit span:nth-child(3)
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #E80F88, #940B92);
+  animation: animate3 1s linear infinite;
+}
+@keyframes animate3
+{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+.submit span:nth-child(4)
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 90%;
+  background: linear-gradient(to top, #E80F88, #940B92);
+  animation: animate4 1s linear infinite;
+}
+@keyframes animate4
+{
+    0%{transform: translateY(100%);}
+    100%{transform: translateY(-100%);}
+}
+
+
+
+
+.connect
+{
+    width: 600px;
+    height: 600px;
+    margin-top: 25px;
+
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px #940B92;
+    background-color: white;
+}
+.connect:hover
+{
+    box-shadow: 20px 20px 15px #E95793;
+    transition: 0.5s;
+}
+
+.Nickname2
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: 95%;
+    height: 15%;
+    
+    margin: 70px 0px 20px 20px;
+}
+
+.size2
+{
+    width: 60px; 
+}
+
+.touch
+{
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Merienda', cursive;
+    color: #35155D;
+    text-shadow: 1px 1px 3px #940B92;
+}

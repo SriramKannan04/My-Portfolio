@@ -1,0 +1,8 @@
+body
+{
+  background-image: url(bg1.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter: blur(2px); */
+}

@@ -1,0 +1,183 @@
+.box1
+{
+    margin-top: 50px;
+    margin-left: 200px;
+    position: absolute;
+    width: 1300px;
+    height: 650px;
+    /* border: 2px solid hotpink; */
+}
+.box11
+{
+    display: flex;
+    margin-top: 60px;
+}
+
+.avatar
+{
+    width: 300px;
+    height: 300px;
+}
+.avatar:hover
+{
+    transform: rotateY(180deg);
+    transition: 0.9s ease;
+}
+
+.homeH1
+{
+    margin-top: 100px;
+    margin-left: 100px;
+    justify-self: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-family: 'Black Ops One', cursive;
+    /* color: rgb(247, 247, 250); */
+    color: blue;
+    text-shadow: 3px 3px 5px rgb(252, 249, 249);
+    font-style: oblique;
+}
+/* .homeH1:hover
+{
+    color: #800080;
+    text-shadow: 2px 3px 6px black;
+    transition: 0.5s ease;
+    cursor: none;
+} */
+.homeH1:hover
+{
+    transform: translate3d(30px, -20px, 30px);
+    transition: 1s ease;
+}
+
+.homeH3
+{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: 'Alkatra', cursive;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: #FF2400 ;
+    text-shadow: 2px 2px 10px #FF7F50;
+}
+/* .homeH3:hover
+{
+    color: #FFFF00;
+    text-shadow: 1px 1px 6px black;
+    transition: 0.5s ease;
+    cursor: none;
+} */
+.homeH3:hover
+{
+    transform: translateX(30px);
+    transition: 1s ease;
+}
+
+
+.text
+{
+    bottom: 60px;
+    position: absolute;
+    margin-left: 900px;
+    display: flex;
+}
+.icon
+{
+    border: 2px solid black;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+.icon1
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+.icon:hover
+{
+    background-color: #FA8072;
+    transition: 0.9s ease;
+    transform: translateY(-10px); 
+    box-shadow: 3px 3px 10px #FA8072;
+    border: 2px solid #FA8072;
+}
+
+.move
+{
+    padding-left: 40px;
+}
+
+/* 
+@keyframes sri1 
+{
+    0%, 100%  { color: rgb(247, 247, 250); }
+    16.66% {
+        color: blue;
+    }
+    33.33% {
+        color: blue;
+    }
+    50% {
+        color: blue;
+    }
+    66.66% {
+        color: blue;
+    }
+    83.33% {
+        color: blue;
+    }
+}
+
+.s 
+{
+    animation: sri1 1s infinite;
+}
+.r 
+{
+    animation: sri1 2s infinite;
+}
+.i 
+{
+    animation: sri1 3s infinite;
+}
+.r2 
+{
+    animation: sri1 4s infinite;
+}
+.a 
+{
+    animation: sri1 5s infinite;
+}
+.m 
+{
+    animation: sri1 6s infinite;
+}
+.k 
+{
+    animation: sri1 7s infinite;
+}
+.a2 
+{
+    animation: sri1 8s infinite;
+}
+.n 
+{
+    animation: sri1 9s infinite;
+}
+.n2 
+{
+    animation: sri1 10s infinite;
+}
+.a3 
+{
+    animation: sri1 11s infinite;
+}
+.n3 
+{
+    animation: sri1 12s infinite;
+}
+ */
+
+
